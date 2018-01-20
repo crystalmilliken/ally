@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ally Code-test Crystal Milliken</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+</head>
+<body>
+<!--menu-->
+  <header>
+    <img id="logo" src="./assets/img/urbank.png" alt="Ally Financial"/>
+    <div class="topnav" id="myTopnav" role="navigation">
+      <a href="#">home</a>
+                <a href="#">employee</a>
+                <a href="#">company</a>
+                <a href="#">services</a>
+                <a href="#">contact</a>
+                <a href="#" style="font-size:15px;" class="icon" onclick="hamMenu()">&#9776;</a>
+    </div>
+  </header>
+  <!--Main Body-->
+  <main class="container">
+    <h1>Best Bank Ever!</h1>
+    <p>
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra
+    </p>
+    <h3>Reasons We're Awesome</h3>
+    <ul id="awesomeList" class="awesome">
+    </ul>
+    <div id="information1">
+      <h3 id="reasonWhyAwesome">Amazing Mobile Info</h3>
+      <p id="mobileInfo">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante</p>
+      <img src="./assets/img/iphone.png" id="phoneImage" alt="iphone"/>
+    </div>
+    <div id="rates"><span class="fontLight">Rates</span> | <span class="fontRegular">Check them out.</span>
+      <table id="tableData">
+        <tr>
+        <th></th>
+        <th class="tableHeaders">Annual Percentage Yield</th>
+        <th class="tableHeaders">Est. Earnings for 1 Year*</th>
+        </tr>
+      </table>
+    </div>
+  </main>
+  <!--Right sidebar-->
+  <aside id="sidebar">
+    <div id="myBtn" class="sidebarLogin">Login</div>
+    <div id="tabs">
+      <div id="news" class="currentTab" style="float:left">News
+          </div>
+      <div id="archive" class="unselectedTab" style="float:left">
+          Archive
+      </div>
+      <div id="sidebarInfo">
+      </div>
+    </div>
+  </aside>
+<!--footer-->
+  <footer>
+    <span>© 2014 URBank</span>
+    <div style="float:right">
+      <a href="#">home</a>
+      <a href="#">employee</a>
+      <a href="#" class="footer-a-active">company</a>
+      <a href="#">services</a>
+      <a href="#">contact</a>
+    </div>
+  </footer>
+   <!--Modal-->
+  <div id="myModal" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content" >
+      <div style=" display:inline;">
+        <span  ><img src="./assets/img/times.png" style="float:right; margin-top:0;" alt="close" class="close" id="close"></span>
+      </div>
+      <div style="width:100%">
+      <h2 style="font-family:Arial, Helvetica, sans-serif;font-weight:lighter;">Sign into your account</h2><br>
+      <label for="Username">Username</label>
+      <input id="Username" style="margin-left:0;margin-bottom:1em;width:80%;height:2em;border:#328cc8 solid 1px"><br>
+      <label for="Password">Password</label>
+      <input id="Password" type="password" style="margin-left:0;;width:80%;height:2em; border:#328cc8 solid 1px"><br>
+      <button id="submit">Submit</button>  
+      </div>
+    </div>
+  </div>
+  <script src="assets/javascripts/script.js"></script>
+</body>
+</html>
